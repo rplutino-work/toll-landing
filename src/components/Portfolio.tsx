@@ -12,18 +12,18 @@ interface Project {
 
 const PROJECTS: Project[] = [
   { name: "Aria", category: "Social Media & Contenido", image: "/fotos/aria/hero.jpg", size: "large" },
-  { name: "Magna", category: "E-commerce", image: "/fotos/magna/hero.jpg", size: "medium" },
+  { name: "Calupe Store", category: "E-commerce", image: "/fotos/calupe/hero.jpg", size: "medium" },
   { name: "Nena Cafe", category: "Social Media & Contenido", image: "/fotos/nena-cafe/hero.jpg", size: "medium" },
+  { name: "Compact Fit Power Series", category: "E-commerce & Contenido", image: "/fotos/cf-power/hero.jpg", size: "large" },
+  { name: "La Focacceria", category: "Social Media & Contenido", image: "/fotos/la-focacceria/hero.jpg", size: "medium" },
+  { name: "Plataci", category: "Social Media & Contenido", image: "/fotos/plataci/hero.jpg", size: "medium" },
   { name: "Cruz DZ", category: "Fotografía", image: "/fotos/cruz-dz/hero.jpg", size: "large" },
-  { name: "Mele Roller", category: "E-commerce", image: "/fotos/mele-roller/hero.jpg", size: "large" },
+  { name: "Mele Roller", category: "E-commerce", image: "/fotos/mele-roller/hero.jpg", size: "medium" },
+  { name: "Magna", category: "E-commerce", image: "/fotos/magna/hero.jpg", size: "medium" },
+  { name: "Compact Fit Pilates Basics", category: "E-commerce & Contenido", image: "/fotos/cf-pilates/hero.jpg", size: "large" },
+  { name: "Jwan", category: "Fotografía", image: "/fotos/jwan/hero.jpg", size: "medium" },
   { name: "15 de Mora", category: "Eventos & Social", image: "/fotos/15-de-mora/hero.jpg", size: "medium" },
-  { name: "Calupe Store", category: "E-commerce", image: "/fotos/aria/extra1.jpg", size: "medium" },
-  { name: "Compact Fit Pilates Basics", category: "E-commerce & Contenido", image: "/fotos/nena-cafe/extra1.jpg", size: "large" },
-  { name: "Compact Fit Power Series", category: "E-commerce & Contenido", image: "/fotos/aria/extra2.jpg", size: "medium" },
-  { name: "La Focacceria", category: "Social Media & Contenido", image: "/fotos/nena-cafe/extra2.jpg", size: "medium" },
-  { name: "Plataci", category: "Social Media & Contenido", image: "/fotos/aria/extra3.jpg", size: "large" },
-  { name: "Jwan", category: "Fotografía", image: "/fotos/cruz-dz/extra1.jpg", size: "medium" },
-  { name: "Paseo Bynnon", category: "Eventos & Social", image: "/fotos/15-de-mora/extra1.jpg", size: "large" },
+  { name: "Paseo Bynnon", category: "Eventos & Social", image: "/fotos/paseo-bynnon/hero.jpg", size: "large" },
 ];
 
 function ProjectCard({ project, index }: { project: Project; index: number }) {

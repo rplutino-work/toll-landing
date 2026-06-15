@@ -14,7 +14,7 @@ export default function Hero() {
         className="mb-8 w-full max-w-3xl"
       >
         <Image
-          src="/logo.svg"
+          src="/logo-secundario.png"
           alt="TOLL"
           width={800}
           height={200}

@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex flex-col items-center gap-8">
           {/* Logo */}
           <Image
-            src="/logo-small.svg"
+            src="/logo-secundario.png"
             alt="Toll Studio"
             width={90}
             height={24}

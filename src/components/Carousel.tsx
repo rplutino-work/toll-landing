@@ -5,17 +5,21 @@ import Image from "next/image";
 
 const CAROUSEL_IMAGES = [
   { src: "/fotos/aria/extra4.jpg", alt: "Aria" },
+  { src: "/fotos/calupe/extra1.jpg", alt: "Calupe Store" },
+  { src: "/fotos/plataci/extra1.jpg", alt: "Plataci" },
+  { src: "/fotos/cf-power/extra1.jpg", alt: "Compact Fit Power Series" },
   { src: "/fotos/nena-cafe/extra3.jpg", alt: "Nena Cafe" },
-  { src: "/fotos/cruz-dz/extra2.jpg", alt: "Cruz DZ" },
+  { src: "/fotos/jwan/extra1.jpg", alt: "Jwan" },
   { src: "/fotos/15-de-mora/extra2.jpg", alt: "15 de Mora" },
-  { src: "/fotos/aria/extra5.jpg", alt: "Aria" },
+  { src: "/fotos/la-focacceria/extra1.jpg", alt: "La Focacceria" },
+  { src: "/fotos/cruz-dz/extra2.jpg", alt: "Cruz DZ" },
+  { src: "/fotos/cf-pilates/extra1.jpg", alt: "Compact Fit Pilates Basics" },
+  { src: "/fotos/paseo-bynnon/extra1.jpg", alt: "Paseo Bynnon" },
   { src: "/fotos/magna/extra1.jpg", alt: "Magna" },
+  { src: "/fotos/aria/extra5.jpg", alt: "Aria" },
   { src: "/fotos/nena-cafe/extra4.jpg", alt: "Nena Cafe" },
-  { src: "/fotos/aria/extra6.jpg", alt: "Aria" },
   { src: "/fotos/15-de-mora/extra3.jpg", alt: "15 de Mora" },
-  { src: "/fotos/mele-roller/hero.jpg", alt: "Mele Roller" },
-  { src: "/fotos/cruz-dz/hero.jpg", alt: "Cruz DZ" },
-  { src: "/fotos/nena-cafe/hero.jpg", alt: "Nena Cafe" },
+  { src: "/fotos/aria/extra6.jpg", alt: "Aria" },
 ];
 
 export default function Carousel() {
