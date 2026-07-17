@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Toll Studio — Contenido, Estrategia y Pauta Digital | Adrogué",
   description:
     "Estudio creativo en Adrogué, Buenos Aires. Branding, contenido, estrategia, pauta y soluciones digitales. Una agencia, todas las soluciones.",
-  metadataBase: new URL("https://tollstudio.com"),
+  metadataBase: new URL("https://toll.com.ar"),
   openGraph: {
     title: "Toll Studio — Contenido, Estrategia y Pauta Digital | Adrogué",
     description:
