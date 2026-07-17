@@ -9,15 +9,21 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import BackToTop from "@/components/BackToTop";
+import { getPortfolioConfig } from "@/lib/storage";
 
-export default function Home() {
+export const dynamic = "force-dynamic";
+
+export default async function Home() {
+  const config = await getPortfolioConfig();
+  const activeProjects = config.projects.filter((p) => p.enabled && p.image);
+
   return (
     <>
       <Nav />
       <main>
         <Hero />
-        <Portfolio />
-        <Carousel />
+        <Portfolio projects={activeProjects} />
+        <Carousel projects={activeProjects} />
         <Services />
         <About />
         <Founder />

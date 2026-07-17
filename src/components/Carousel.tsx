@@ -2,27 +2,12 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import type { PortfolioProject } from "@/lib/portfolio";
 
-const CAROUSEL_IMAGES = [
-  { src: "/fotos/aria/extra4.jpg", alt: "Aria" },
-  { src: "/fotos/calupe/extra1.jpg", alt: "Calupe Store" },
-  { src: "/fotos/plataci/extra1.jpg", alt: "Plataci" },
-  { src: "/fotos/cf-power/extra1.jpg", alt: "Compact Fit Power Series" },
-  { src: "/fotos/nena-cafe/extra3.jpg", alt: "Nena Cafe" },
-  { src: "/fotos/jwan/extra1.jpg", alt: "Jwan" },
-  { src: "/fotos/15-de-mora/extra2.jpg", alt: "15 de Mora" },
-  { src: "/fotos/la-focacceria/extra1.jpg", alt: "La Focacceria" },
-  { src: "/fotos/cruz-dz/extra2.jpg", alt: "Cruz DZ" },
-  { src: "/fotos/cf-pilates/extra1.jpg", alt: "Compact Fit Pilates Basics" },
-  { src: "/fotos/paseo-bynnon/extra1.jpg", alt: "Paseo Bynnon" },
-  { src: "/fotos/magna/extra1.jpg", alt: "Magna" },
-  { src: "/fotos/aria/extra5.jpg", alt: "Aria" },
-  { src: "/fotos/nena-cafe/extra4.jpg", alt: "Nena Cafe" },
-  { src: "/fotos/15-de-mora/extra3.jpg", alt: "15 de Mora" },
-  { src: "/fotos/aria/extra6.jpg", alt: "Aria" },
-];
+export default function Carousel({ projects }: { projects: PortfolioProject[] }) {
+  const images = projects.map((p) => ({ src: p.image, alt: p.name }));
+  if (images.length === 0) return null;
 
-export default function Carousel() {
   return (
     <section className="overflow-hidden bg-verde-noche py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
@@ -38,11 +23,9 @@ export default function Carousel() {
         </motion.h2>
       </div>
 
-      {/* Infinite marquee */}
       <div className="relative w-full overflow-hidden">
         <div className="animate-marquee flex w-max gap-4">
-          {/* Double the images for seamless loop */}
-          {[...CAROUSEL_IMAGES, ...CAROUSEL_IMAGES].map((img, i) => (
+          {[...images, ...images].map((img, i) => (
             <div
               key={`${img.src}-${i}`}
               className="relative h-64 flex-shrink-0 overflow-hidden rounded-lg md:h-80"
@@ -55,6 +38,7 @@ export default function Carousel() {
                 sizes="360px"
                 className="object-cover"
                 loading="lazy"
+                unoptimized={img.src.includes("vercel-storage")}
               />
             </div>
           ))}

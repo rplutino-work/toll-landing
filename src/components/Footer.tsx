@@ -43,18 +43,24 @@ export default function Footer() {
           </a>
 
           {/* Credits */}
-          <div className="flex flex-col items-center gap-2 text-center">
-            <p className="font-body text-xs font-light text-white/30">
-              Desarrollado por{" "}
-              <a
-                href="https://rok.com.ar"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white/50 transition-colors hover:text-lima"
-              >
-                rok.studio
-              </a>
-            </p>
+          <div className="flex flex-col items-center gap-4 text-center">
+            <a
+              href="https://rok.com.ar"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 opacity-50 transition-opacity hover:opacity-100"
+            >
+              <span className="font-body text-xs font-light text-white/60">
+                Desarrollado por
+              </span>
+              <Image
+                src="/rok-logo.png"
+                alt="rok.studio"
+                width={70}
+                height={20}
+                className="h-4 w-auto"
+              />
+            </a>
             <p className="font-body text-xs font-light text-white/30">
               &copy; 2026 Toll Studio
             </p>
