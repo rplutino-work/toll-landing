@@ -44,21 +44,21 @@ export default function Contact() {
               +54 11 3447 0484
             </a>
             <a
-              href="mailto:contacto@tollstudio.com"
+              href="mailto:contacto@toll.com.ar"
               className="font-body text-lg font-light text-white transition-colors hover:text-lima md:text-xl"
             >
-              contacto@tollstudio.com
+              contacto@toll.com.ar
             </a>
             <a
-              href="https://instagram.com/toll.studio"
+              href="https://instagram.com/toll.agencia"
               target="_blank"
               rel="noopener noreferrer"
               className="font-body text-lg font-light text-white transition-colors hover:text-lima md:text-xl"
             >
-              @toll.studio
+              @toll.agencia
             </a>
             <p className="font-body text-base font-light text-white/60">
-              Diagonal Toll 1475, Adrogué, Buenos Aires
+              Adrogué, Buenos Aires
             </p>
           </motion.div>
 

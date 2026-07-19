@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Logo */}
           <Image
             src="/logo-secundario.png"
-            alt="Toll Studio"
+            alt="Toll"
             width={90}
             height={24}
             className="h-6 w-auto"
@@ -34,37 +34,38 @@ export default function Footer() {
 
           {/* Social */}
           <a
-            href="https://instagram.com/toll.studio"
+            href="https://instagram.com/toll.agencia"
             target="_blank"
             rel="noopener noreferrer"
             className="font-body text-sm font-light text-white/50 transition-colors hover:text-lima"
           >
-            @toll.studio
+            @toll.agencia
           </a>
 
-          {/* Credits */}
-          <div className="flex flex-col items-center gap-4 text-center">
+          {/* rok credits — bigger */}
+          <div className="mt-8 flex flex-col items-center gap-3">
             <a
               href="https://rok.com.ar"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 opacity-50 transition-opacity hover:opacity-100"
+              className="flex items-center gap-3 opacity-70 transition-opacity hover:opacity-100"
             >
-              <span className="font-body text-xs font-light text-white/60">
+              <span className="font-body text-sm font-light text-white/70">
                 Desarrollado por
               </span>
               <Image
                 src="/rok-logo.png"
                 alt="rok.studio"
-                width={70}
-                height={20}
-                className="h-4 w-auto"
+                width={100}
+                height={28}
+                className="h-6 w-auto"
               />
             </a>
-            <p className="font-body text-xs font-light text-white/30">
-              &copy; 2026 Toll Studio
-            </p>
           </div>
+
+          <p className="font-body text-xs font-light text-white/30">
+            &copy; 2026 Toll
+          </p>
         </div>
       </div>
     </footer>

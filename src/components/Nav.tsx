@@ -45,7 +45,7 @@ export default function Nav() {
           <a href="#" className="relative z-50">
             <Image
               src="/logo-secundario.png"
-              alt="Toll Studio"
+              alt="Toll"
               width={90}
               height={24}
               className="h-6 w-auto"

@@ -30,7 +30,7 @@ export default function Hero() {
         transition={{ duration: 0.8, delay: 0.4 }}
         className="mb-3 max-w-xl text-center font-body text-base font-light leading-relaxed text-white/90 md:text-lg"
       >
-        Estudio creativo de contenido, estrategia y pauta digital.
+        Contenido, estrategia y pauta digital.
       </motion.p>
 
       {/* Tagline 2 */}
