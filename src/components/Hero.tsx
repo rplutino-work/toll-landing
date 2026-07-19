@@ -1,17 +1,30 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 
 export default function Hero() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start start", "end start"],
+  });
+
+  const textOpacity = useTransform(scrollYProgress, [0, 0.4], [1, 0]);
+  const textY = useTransform(scrollYProgress, [0, 0.4], [0, 60]);
+
   return (
-    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-verde-noche px-6">
-      {/* Logo grande */}
+    <section
+      ref={sectionRef}
+      className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-verde-noche px-6"
+    >
+      {/* Logo grande — smaller on mobile */}
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="mb-8 w-full max-w-3xl"
+        className="mb-8 w-full max-w-[240px] sm:max-w-md md:max-w-3xl"
       >
         <Image
           src="/logo-secundario.png"
@@ -23,21 +36,22 @@ export default function Hero() {
         />
       </motion.div>
 
-      {/* Tagline 1 */}
+      {/* Taglines — fade out on scroll */}
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.4 }}
+        style={{ opacity: textOpacity, y: textY }}
         className="mb-3 max-w-xl text-center font-body text-base font-light leading-relaxed text-white/90 md:text-lg"
       >
         Contenido, estrategia y pauta digital.
       </motion.p>
 
-      {/* Tagline 2 */}
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.6 }}
+        style={{ opacity: textOpacity, y: textY }}
         className="max-w-xl text-center font-body text-base font-light leading-relaxed text-white/90 md:text-lg"
       >
         Ayudamos a marcas a{" "}
@@ -50,6 +64,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2, duration: 0.8 }}
+        style={{ opacity: textOpacity }}
         className="absolute bottom-10 flex flex-col items-center gap-2"
       >
         <span className="font-body text-[10px] font-medium tracking-[0.3em] text-white/40">

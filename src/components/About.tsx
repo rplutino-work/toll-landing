@@ -60,7 +60,7 @@ export default function About() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="font-body text-xs font-medium tracking-[0.3em] text-white/40"
+          className="whitespace-nowrap font-body text-[10px] font-medium tracking-[0.2em] text-white/40 sm:text-xs sm:tracking-[0.3em]"
         >
           BASED IN ADROGUÉ / BUENOS AIRES
         </motion.p>

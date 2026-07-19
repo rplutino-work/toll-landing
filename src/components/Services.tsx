@@ -88,7 +88,7 @@ export default function Services() {
         </div>
 
         {/* Pills */}
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap justify-center gap-3">
           {PILLS.map((pill, i) => (
             <motion.span
               key={pill}
