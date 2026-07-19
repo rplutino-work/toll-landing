@@ -49,14 +49,6 @@ export default function Contact() {
             >
               contacto@toll.com.ar
             </a>
-            <a
-              href="https://instagram.com/toll.agencia"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-body text-lg font-light text-white transition-colors hover:text-lima md:text-xl"
-            >
-              @toll.agencia
-            </a>
             <p className="font-body text-base font-light text-white/60">
               Adrogué, Buenos Aires
             </p>

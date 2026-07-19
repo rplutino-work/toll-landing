@@ -32,16 +32,6 @@ export default function Footer() {
             )}
           </div>
 
-          {/* Social */}
-          <a
-            href="https://instagram.com/toll.agencia"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-body text-sm font-light text-white/50 transition-colors hover:text-lima"
-          >
-            @toll.agencia
-          </a>
-
           {/* rok credits — bigger */}
           <div className="mt-8 flex flex-col items-center gap-3">
             <a
