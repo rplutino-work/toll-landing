@@ -6,6 +6,7 @@ import Services from "@/components/Services";
 import About from "@/components/About";
 import Founder from "@/components/Founder";
 import Contact from "@/components/Contact";
+import JoinTeam from "@/components/JoinTeam";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import BackToTop from "@/components/BackToTop";
@@ -27,6 +28,7 @@ export default async function Home() {
         <Services />
         <About />
         <Founder />
+        <JoinTeam />
         <Contact />
       </main>
       <Footer />
